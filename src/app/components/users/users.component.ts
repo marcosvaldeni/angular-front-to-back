@@ -12,6 +12,7 @@ export class UsersComponent implements OnInit {
   showExtended: boolean = true;
   loaded: boolean = false;
   enableAdd: boolean = true;
+  showUserForm: boolean = false;
 
 
   constructor() { }
@@ -55,7 +56,7 @@ export class UsersComponent implements OnInit {
         },
         isActive: true,
         registered: new Date('01/02/2018 08:30:00'),
-        hide: false
+        hide: true
       },
     ];
 
@@ -69,5 +70,11 @@ export class UsersComponent implements OnInit {
   fireEvent(e) {
     console.log(e.type);
 
+  }
+
+  onSubmit(e) {
+    console.log(123);
+
+    e.preventDefault();
   }
 }
