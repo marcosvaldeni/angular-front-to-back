@@ -11,12 +11,7 @@ export class UsersComponent implements OnInit {
   user: User = {
     firstName: '',
     lastName: '',
-    age: null,
-    address: {
-      street: '',
-      city: '',
-      state: ''
-    }
+    email: ''
   }
   users: User[];
   showExtended: boolean = true;
@@ -32,12 +27,7 @@ export class UsersComponent implements OnInit {
       {
         firstName: 'John',
         lastName: 'Doe',
-        age: 70,
-        address: {
-          street: '50 Main st',
-          city: 'Boston',
-          state: 'MA'
-        },
+        email: 'doe@email.com',
         isActive: true,
         registered: new Date('01/02/2018 08:30:00'),
         hide: true
@@ -45,12 +35,7 @@ export class UsersComponent implements OnInit {
       {
         firstName: 'John',
         lastName: 'Doe',
-        age: 70,
-        address: {
-          street: '50 Main st',
-          city: 'Boston',
-          state: 'MA'
-        },
+        email: 'doe@email.com',
         isActive: true,
         registered: new Date('01/02/2018 08:30:00'),
         hide: true
@@ -58,12 +43,7 @@ export class UsersComponent implements OnInit {
       {
         firstName: 'John',
         lastName: 'Doe',
-        age: 70,
-        address: {
-          street: '50 Main st',
-          city: 'Boston',
-          state: 'MA'
-        },
+        email: 'doe@email.com',
         isActive: true,
         registered: new Date('01/02/2018 08:30:00'),
         hide: true
@@ -82,12 +62,7 @@ export class UsersComponent implements OnInit {
     this.user = {
       firstName: '',
       lastName: '',
-      age: null,
-      address: {
-        street: '',
-        city: '',
-        state: ''
-      }
+      email: '',
     }
   }
 
