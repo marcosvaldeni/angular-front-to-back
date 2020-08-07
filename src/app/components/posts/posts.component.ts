@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { PostService } from '../../services/post.service';
 
 import { Post } from '../../models/Post';
-import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-posts',
@@ -18,6 +17,10 @@ export class PostsComponent implements OnInit {
     this.postService.getPosts().subscribe(posts => {
       this.posts = posts;
     })
+  }
+
+  onNewPost(post: Post) {
+    this.posts.unshift(post);
   }
 
 }
