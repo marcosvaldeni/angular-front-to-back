@@ -27,8 +27,14 @@ export class PostService {
   removePost(post: Post | number): Observable<Post> {
     const id = typeof post === 'number' ? post : post.id;
     const url = `${this.postsUrl}/${id}`;
-    console.log(url);
 
     return this.http.delete<Post>(url, httpOptions);
+  }
+
+  updatePost(post: Post) :Observable<Post> {
+    const url = `${this.postsUrl}/${post.id}`;
+
+    return this.http.put<Post>(url, post, httpOptions);
+
   }
 }
