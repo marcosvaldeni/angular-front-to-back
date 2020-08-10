@@ -13,6 +13,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './components/home/home.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { PostComponent } from './components/post/post.component';
+import { NotFoundComponent } from './components/not-found/not-found.component';
 
 
 
@@ -24,7 +25,8 @@ import { PostComponent } from './components/post/post.component';
     PostFormComponent,
     HomeComponent,
     NavbarComponent,
-    PostComponent
+    PostComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
