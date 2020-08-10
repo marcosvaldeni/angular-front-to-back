@@ -11,6 +11,7 @@ import { PostService } from './services/post.service';
 import { PostFormComponent } from './components/post-form/post-form.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './components/home/home.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 
 
@@ -20,7 +21,8 @@ import { HomeComponent } from './components/home/home.component';
     UsersComponent,
     PostsComponent,
     PostFormComponent,
-    HomeComponent
+    HomeComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
